@@ -2,8 +2,10 @@
 1- Bir liste içindeki sayıların karelerini alarak yeni bir liste oluşturun.
 [1,2,3,4,5,6,7,8,9,10]
 """
-listelimiz = [1,2,3,4,5,6,7,8,9,10]
-
+sayac = 10
+while sayac > 0:
+    listelimiz.append(int(input("Sayi gir"))
+    sayac-=1
 newOne = [a*a for a in listelimiz]
 print(newOne)
 
@@ -55,13 +57,12 @@ toplam = 0
 listeSayi = []
 sayac = 0
 while sayac < 10:
-    b = input(f"{sayac+1}.sayiyi giriniz: ")
+    b = input(f"{sayac+1}.sayiyi giriniz: \n")
     listeSayi.append(int(b))
     sayac += 1
-
-for a in listeSayi:
-    if a % 2 != 0:
-        toplam += a
+    if b % 2 != 0:
+        toplam += b
+        print("Son girdi {} ile toplam girilen tek sayıların değeri: {}\n".format(b,toplam))
 
 print("Girilen tüm tek sayıların toplamı: {}".format(toplam))
 print("\n")
